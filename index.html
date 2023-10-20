@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+<link rel="stylesheet" href="Style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="header">
+  
+
+    <input type="checkbox" id="active">
+    <div class="navbar">
+              <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+    <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="lessons.html">My Lessons</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+  <div class="header-text">
+  <h1>Looking For Guitar Lessons?</h1>
+  <h4>Scroll Down For More Information</h4>
+</div>
+</div>
+  <div class="welcome-main-content">
+    <div class="welcome-video-section">
+        <video width="826" height="477" controls>
+          <source src="video/Introduction_video.mp4" type="video/mp4" title="Introduction video to George Capon's Guitar Lessons">
+        </video>
+    </div>
+
+    <div class="welcome-text-section">
+      <h2 class="welcome-heading">Welcome!</h2>
+      <h5>High-quality one-to-one guitar Lessons</h5>
+      <p>Welcome to Guitar lessons in Sale. Whether you're looking for acoustic or electric guitar tuition, I can help! I teach the guitar online through Zoom, via my professional lit studio. Whether you're into country and blues, 80's, or 00's Rock. I can help you achieve your guitar-playing ambitions.</p>
+
+      <h2 class="welcome-subheading">All Abilities Welcome!</h2>
+      <p>​My lessons have helped a whole host of people improve their guitar playing, regardless of ability or preferred genre.</p>
+<p>
+        I approach each student individually and work to provide you with the tools and techniques to help you become a more advanced and fluent guitar player! I'm also happy to follow the tried and tested route of the grading system</p>
+    </div>
+  </div>
+
+  <div class="testimonial-section">
+    <img class="testimonial-img" src="images/quotation_marks.png"/>
+
+    <p class="testimonial-text">"George is such a helpful and patient teacher who has truly helped me progress with my guitar playing! He makes sure to explain guitar theory to me and always insists I ask for help when needed. Learning online has been just as effective as off and I look forward to learning more with him!"</p>
+    <span class="testimonial-author">Christina Croitor</span>
+  </div>
+
+  <div class="footer">
+      <div class="desktop-links">
+    <a class="phone-link" href="https://wa.me/+447802622204">
+      <i class="fa fa-phone" aria-hidden="true"></i>
+      07802622204
+    </a>
+    <a class="email-link" href="mailto:guitarlessonsin@gmail.com">
+      <i class="fa fa-envelope"></i>
+      guitarlessonsin@gmail.com
+    </a>
+  </div>
+  <div class="mobile-buttons">
+    <a class="phone-button" href="https://wa.me/+447802622204">
+      <button>
+      <i class="fa fa-phone" aria-hidden="true"></i>
+    </button>
+     </a>
+    <a class="email-button" href="mailto:guitarlessonsin@gmail.com">
+      <button>
+      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    </button>
+</a>
+
+  </div>
+</div>
+
+  <div id="size"></div>
+
+  <script>
+    window.onresize = screen;
+window.onload = screen;
+
+function screen () {
+  myWidth =  window.innerWidth;
+
+  document.getElementById("size").innerHTML = "Width : " + myWidth + "px";
+}
+
+  </script>
+</body>
+
+</html>

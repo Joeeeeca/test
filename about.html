@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="about-me-body">
+    <input type="checkbox" id="active">
+    <div class="navbar">
+      <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="lessons.html">My Lessons</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="about-main-content">
+      <div class="about-header">
+        <h1>About Me</h1>
+      </div>
+      <p class="about-me-text">
+        Hi, I'm George,
+      </p>
+
+      <p class="about-me-text">
+        ​I'm a grade 8 guitar player/singer-songwriter, and teacher, with a degree in music performance & recording from the London College of Music. Originally from the Isle of Wight, I started teaching in 2018 after moving to Greater Manchester from London the September before.
+      </p>
+
+      <p class="about-me-text">
+        Once I started teaching I immediately realized it was for me, giving people the tools that they need to succeed with the guitar was very fulfilling to me. Whether it was a young person with heaps of potential, a complete beginner looking to start a new hobby, or even a long-time player looking to eliminate any bad habits they may have accumulated over the years. Helping people reach their guitar-playing goals has always felt like it was an extremely rewarding thing to do.
+      </p>
+    </div>
+
+    <div class="about-image-container">
+      <div class="about-me-box" id="about-me-box-1">
+        <img src="images/about_me_left_picture.jpg">
+      </div>
+
+      <div class="about-me-box" id="about-me-box-2">
+<img src="images/about_me_center_picture.jpg">
+      </div>
+
+      <div class="about-me-box" id="about-me-box-3">
+
+<img src="images/about_me_right_picture.jpg">
+
+      </div>
+
+      <div class="footer">
+        <div class="desktop-links">
+      <a class="phone-link" href="https://wa.me/+447802622204">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        07802622204
+      </a>
+      <a class="email-link" href="mailto:guitarlessonsin@gmail.com">
+        <i class="fa fa-envelope"></i>
+        guitarlessonsin@gmail.com
+      </a>
+    </div>
+    <div class="mobile-buttons">
+      <a class="phone-button" href="https://wa.me/+447802622204">
+        <button>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+      </button>
+       </a>
+      <a class="email-button" href="mailto:guitarlessonsin@gmail.com">
+        <button>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      </button>
+  </a>
+  
+    </div>
+  </div>
+      <div id="size"></div>
+
+      <script>
+        window.onresize = screen;
+    window.onload = screen;
+    
+    function screen () {
+      myWidth =  window.innerWidth;
+    
+      document.getElementById("size").innerHTML = "Width : " + myWidth + "px";
+    }
+    
+      </script>
+  </body>
+</html>
