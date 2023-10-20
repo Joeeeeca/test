@@ -1,0 +1,994 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+#size {
+  position:fixed;
+  top:60%;
+  left:50%;
+  transform: translateX(-50%);
+  font-size:35px;
+  color:Red;
+  }
+
+.header {
+  background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.7)), url('images/Home_scroll_picture.jpg');
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom:-80px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 40px;
+}
+
+.navbar li {
+padding: 0 1rem;
+}
+
+.navbar a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: none;
+
+  font-size: 2vh;
+}
+
+.navbar ul li::after{
+  content: '';
+  width:0%;
+  height:2px;
+  background: #f44336;
+  display:block;
+  margin: auto;
+  transition:0.5s;
+}
+
+.navbar ul li:hover::after{
+  width:100%;
+}
+
+.navbar ul li .active {
+  color:orange;
+}
+
+.menu-btn {
+  display:none;
+  }
+  
+  
+  input[type="checkbox"] {
+  display:none;
+  }
+
+  
+
+/*Landing Page css 1920px*/
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:83.8vh;
+  font-size:2.6vh;
+}
+
+.header-text h4 {
+  font-size:2.2vh;
+  padding-top:1rem;
+}
+
+.welcome-main-content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color:#dadada;
+  margin-bottom:-80px;
+}
+
+.welcome-video-section {
+  flex:1;
+  margin:0 auto;
+  padding:1.8em 0 2em 0;
+}
+
+
+.welcome-text-section {
+  flex: 1;
+  margin: 1em;
+  padding: 1em;
+  text-align: center; 
+  width:41.82%;
+  margin: 0 auto 100px auto;
+}
+
+.welcome-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight:400;
+  font-size:5vh;
+  padding-bottom:20px;
+}
+
+.welcome-text-section h5 {
+  font-family: 'Caudex', serif;
+  font-weight:500;
+  font-size:3vh;
+  font-style:italic;
+  padding-bottom:20px;
+}
+
+.welcome-text-section p {
+  font-family: 'Caudex', serif;
+  font-size:2.2vh;
+  padding-bottom:30px;
+}
+
+.welcome-subheading {
+   font-family: 'Caudex', serif;
+  font-size:3vh;
+  font-weight:700;
+  padding-bottom:10px;
+}
+
+
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  background-color: black;
+  min-height: 300px;
+  text-align: center;
+  margin-bottom:50px;
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  padding-bottom: 1.5rem;
+  padding-top:1.5rem;
+}
+
+.testimonial-text {
+  font-family: 'Caudex', serif;
+  font-style:italic;
+  width:44%;
+  font-size: 2.2vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:1rem;
+}
+
+.testimonial-author {
+  font-family:'Caudex', serif;
+  font-style:italic;
+  color:white;
+  font-size:2.2vh;
+}
+
+/*Lessons CSS 1920px*/
+
+.lessons-body {
+  min-height:100vh;
+  width:100%;
+  background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.9)),url('/images/My_lessons_picture.jpg');
+  background-position:center;
+  background-size:cover;
+background-attachment:fixed;
+}
+
+.lessons-main-content {
+  display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:80px;
+  }
+  
+  .lessons-header h1 {
+    font-family: 'Caudex', serif;
+    font-weight:400;
+    font-size:4.3vh;
+    font-style:italic;
+    padding-bottom:20px;
+    color:White;
+  }
+  
+  .lessons-text {
+    flex: 1;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    width:60%;
+    margin: 0 auto 0px auto;
+    color:White;
+    font-family: 'Caudex', serif;
+    font-size:2.5vh;
+  }
+  
+  .lessons-subheading {
+    font-family: 'Caudex', serif;
+    font-weight:400;
+    font-size:4.3vh;
+    font-style:italic;
+    padding-bottom:20px;
+    color:White;
+  }
+  
+  .lessons-testimonials-container {
+              display: flex;
+              justify-content: center;
+              padding-top:20px;
+             padding-bottom:20px;
+             margin-bottom:60px;
+          }
+  
+          .lessons-box {
+            font-family:'Caudex', serif;
+              min-height: 390px;
+              padding:2rem;
+              margin: 0 10px; /* Adjust the margin for the desired gap */
+              background-color: white;
+              color: black;
+              text-align: center;
+              font-size:2.5vh;
+              transition: transform .4s;
+              display:flex;
+              flex-direction: column;
+              justify-content: space-between;
+          }
+  
+          #lessons-box1,
+          #lessons-box3 {
+            width:14.5%;
+            border-radius:10%;
+            position:relative;
+          }
+  
+          #lessons-box2 {
+            width:20.5%;
+            border-radius:10%;
+          }
+  
+         
+  
+          .lessons-container-author {
+            text-align: center;
+            padding-top:1rem;
+    font-weight: bold;
+    margin-top: auto;
+  
+          }
+          
+  
+          .lessons-box:hover {
+          box-shadow: 4px 4px 8px 8px rgba(211, 211, 211, 0.2), 6px 6px 20px 20px rgba(211, 211, 211, 0.2);
+      transform: scale(1.1);
+          }
+
+
+
+/*About Me css 1920px*/
+.about-me-body {
+  height:100vh;
+  width:100%;
+  background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.9)),url('/images/background-image-backup.jpg');
+  background-position:center;
+  background-size:cover;
+background-attachment:fixed;
+}
+
+.about-main-content {
+  display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:80px;
+  }
+  
+  .about-header h1 {
+    font-family: 'Caudex', serif;
+    font-weight:400;
+    font-size:4.3vh;
+    font-style:italic;
+    padding-bottom:20px;
+    color:White;
+  }
+  
+  .about-me-text {
+    flex: 1;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    width:60%;
+    margin: 0 auto 0px auto;
+    color:White;
+    font-family: 'Caudex', serif;
+    font-size:2.5vh;
+  }
+  
+.about-image-container {
+  display:flex;
+  justify-content: center;
+}
+  
+          .about-me-box {
+            font-family:'Caudex', serif;
+            width:15%;
+            height:320px;
+              margin: 0px 20px 70px 20px; /* Adjust the margin for the desired gap */
+              color: black;
+              text-align: center;
+              font-size:20px;
+              transition: transform .4s;
+              margin-bottom:80px;
+          }
+  
+          #about-me-box-1 img {
+            height:100%;
+            width:100%;
+            border-radius:10%;
+          }
+          
+          #about-me-box-3 img,
+          #about-me-box-2 img {
+            width:100%;
+            height:100%;
+            border-radius:10%;
+          }
+
+          .contact-header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,0.8)),url('images/contact_picture.jpg');
+            background-position: center;
+            background-size: cover;
+          }
+          
+          .contact-us {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            margin-top:80px;
+          }
+
+          .contact-text {
+            font-family: 'Caudex', serif;
+            font-style:italic;
+            font-size:4.3vh;
+            color:white;
+          }
+          
+          .contact-row {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 20px;
+          }
+          
+          .contact-col {
+            flex-basis: 45%;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+          }
+
+          .contact-email-address {
+            font-size:3vh;
+            text-decoration: none;
+            color:white;
+          }
+
+        
+          .email-icon {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            margin:0 auto;
+          }
+          
+          .email-icon i {
+            font-size: 4vh;
+            color: #f44336;
+            margin-right: 10px;
+          }
+          
+          .contact-col input,
+          .contact-col textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 17px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid white;
+            box-sizing: border-box;
+            background: transparent;
+            color: white;
+            font-size: 18px;
+          }
+
+          .contact-col input::placeholder,
+          .contact-col textarea::placeholder {
+            color:white;
+          }
+          
+          .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+            transition: border-color 0.3s, background-color 0.3s;
+          }
+          
+          .hero-btn:hover {
+            border-color: #f44336;
+            background-color: #f44336;
+          }
+
+
+.footer {
+  background-color:#dadada;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.email-link,
+.phone-link {
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  color:black;
+  font-size:24px;
+}
+
+.email-link i {
+  margin-right: 5px;
+}
+
+.mobile-buttons {
+  display: none;
+}
+
+/*1440px*/
+
+@media (max-width:1440px) {
+  .lessons-testimonials-container img {
+    height: auto;
+  max-height: 300px;
+  }
+
+  .about-me-box {
+    width:20%;
+  }
+}
+
+/*1253px*/
+@media (max-width:1253px) {
+  .testimonial-img {
+    width:3%;
+    height:10%;
+    padding: 0 0 0.5rem 0;
+  }
+}
+
+/*1140px*/
+@media (max-width:1140px) {
+  .lessons-testimonials-container {
+        flex-direction: column;
+       justify-content: center;
+       align-items:center;
+       padding: 0 0.5rem;
+      }
+
+      .lessons-box{
+        min-height:auto;
+      }
+
+      #lessons-box1,
+      #lessons-box2,
+      #lessons-box3 {
+        width:80%;
+        height:100%;
+        border-radius:0%;
+        margin-bottom:20px;
+              }
+              
+
+      .lessons-container-author {
+        margin-top:10px;
+        padding:0;
+}
+}
+
+/*1024px*/
+@media (max-width:1024px) {
+  .welcome-video-section {
+    width:50%;
+    margin:0 auto;
+  }
+
+  .welcome-video-section video {
+    width:100%;
+    height:100%;
+  }
+  .testimonial-section {
+    padding-top:20px;
+    margin:0;
+    height:20%;
+  }
+
+  .lessons-testimonials-container img {
+    height: auto;
+  max-height: 230px;
+  }
+
+  .about-image-container {
+    height:50%;
+    padding-top:30px;
+  }
+  .about-me-box {
+    width:20%;
+    height:70%;
+  }
+}
+
+/*853px*/
+
+@media (max-width:853px) {
+  .welcome-video-section video {
+  width: 100%;
+  height:auto;
+}
+}
+
+/*786px*/
+
+@media (max-width:786px) {
+  .header-text h1 {
+    font-size:4vh;
+  }
+
+  .header-text h2 {
+    font-size:1vh;
+  }
+
+  .testimonial-text {
+    padding:0px;
+    font-size:2vh;
+  }
+
+  .testimonial-img {
+    width:4%;
+    height:5%;
+  }
+}
+
+/*768px*/
+@media (max-width:768px) {
+  .welcome-video-section {
+    width:80%;
+    margin:0 auto;
+  }
+
+
+
+  .welcome-text-section{
+width:80%;
+  }
+
+
+  .testimonial-section {
+    padding-top:15px;
+  }
+
+  .testimonial-img {
+    height:6%;
+    width:6%;
+  }
+
+  .testimonial-text,
+  .lessons-text,
+  .about-me-text {
+    width:80%;
+  }
+
+  .testimonial-author {
+    padding-top:10px;
+  }
+
+
+
+  .about-me-box {
+    width:40%;
+    height:55%;
+    margin-bottom:0px;
+  }
+
+  #about-me-box-3 {
+    margin-bottom:0px;
+  }
+
+  .contact-text {
+    font-size:3vh;
+  }
+  .contact-row {
+    flex-direction: column; /* Stack contact-cols vertically */
+  }
+
+  .contact-col {
+    flex-basis: 100%; /* Each contact-col takes full width */
+  }
+}
+
+/*678px*/
+
+@media (max-width:678px) {
+  .lessons-header h1{
+font-size:3vh;
+  }
+
+.lessons-subheading h2 {
+  font-size:2vh;
+}
+}
+
+/*606px*/
+
+@media (max-width:606px) {
+  .desktop-links,
+    .phone-link,
+    .email-link
+     {
+      display: none;
+    }
+  
+    .footer {
+      margin:0px;
+  padding:0px;
+     height:50px;
+     width:100%;
+    }
+  
+   
+    
+    .mobile-buttons {
+      display: flex;
+      margin:0px;
+      padding:0px;
+      width:100%;
+    }
+  
+    .phone-button,
+    .email-button {
+      text-decoration: none;
+      color: #fff;
+      margin: 10px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    #home-mobile-buttons{
+   position:fixed;
+   bottom:-2px;
+    }
+  
+    .phone-button {
+      background-color: #a3e0a3;
+      width:50%;
+      float:left;
+      border:none;
+      height:40px;
+      margin:0px;
+    }
+  
+    .email-button {
+      background-color: #e57373;
+      margin:0px;
+      width:50%;
+      border:none;
+      height: 40px;
+    }
+  
+    .phone-button i,
+    .email-button i {
+      margin-right: 5px;
+    }
+  
+    .phone-button .fa-phone,
+      .email-button .fa-envelope-o {
+        font-size:30px;
+        color:white;
+      }
+  
+      .phone-button button {
+        border:none;
+        background-color:#a3e0a3;
+        margin-top:5px;
+      }
+      .email-button button {
+        border:none;
+        background-color:#e57373;
+      }
+    }
+  
+    /*600px*/
+
+    @media (max-width: 600px) {
+      .lessons-testimonials-container img {
+        height: auto;
+      max-height: 180px;
+      }
+  
+      .about-me-box {
+        width:25%;
+        margin-bottom:-140px;
+      }
+    }
+
+    /*570px*/
+
+    @media (max-width:570px) {
+      .email-link,
+      .phone-link {
+        font-size:2vh;
+      }
+    }
+
+    /*528px*/
+
+    @media (max-width:528px) {
+      .header-text h1 {
+        font-size:3vh;
+      }
+    
+      .header-text h2 {
+        font-size:0.5vh;
+      }
+    
+      .navbar a {
+    font-size:2vh;
+      }
+    }
+
+    /*425px*/
+
+    @media (max-width:425px) {
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        clip-path: circle(25px at calc(100% - 45px) 45px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+      }
+  
+    
+    
+      #active:checked ~ .navbar{
+        clip-path: circle(75%);
+      }
+    
+      .menu-btn{
+        display:block;
+        position: absolute;
+        z-index: 2;
+        right: 20px;
+        top: 20px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        background:red;
+        transition: all 0.3s ease-in-out;
+      }
+
+    
+    
+      
+      #active:checked ~ .menu-btn{
+        background: #fff;
+        color: #4158d0;
+        right:20px;
+      }
+    
+      #active:checked ~ .menu-btn i:before{
+        content: "\f00d";
+      }
+    
+      .navbar ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .navbar ul li {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px; /* Adjust as needed */
+      }
+      
+      .navbar ul li:last-child {
+        margin-bottom: 0;
+      }
+      
+      .navbar ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+      
+      
+      .navbar ul li a:hover {
+        color: #4158d0;
+      }
+      input[type="checkbox"]{
+        display: none;
+      }
+
+      .welcome-video-section {
+        width:80%;
+      }
+
+      .welcome-text-section{
+width:80%;
+      }
+
+      .testimonial-img{
+        width:9%;
+        height:10%;
+      }
+
+      .testimonial-text {
+        padding-top:20px;
+        width:80%;
+      }
+
+      .lessons-text {
+        width:80%;
+      }
+
+      .about-me-text {
+        width:80%;
+      }
+
+      .about-image-container {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:0px;
+        height:100%;
+      }
+      .about-me-box {
+        margin-bottom:20px;
+        height:30%;
+        width:50%;
+      }
+
+      #about-me-box-3 {
+       margin-bottom:100px;
+      }
+
+      .contact-us {
+        margin-top: 40px; /* Adjust the top margin */
+      }
+    
+      .contact-col {
+        width: 90%;
+        margin: 10px;
+        padding: 20px;
+        font-size: 16px; /* Adjust font size */
+        text-align: center; /* Center text */
+      }
+    
+      .contact-col input,
+      .contact-col textarea {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width:360px) {
+
+      .navbar {
+        background: rgba(0, 0, 0, 0.5);
+        z-index:999;
+      }
+
+     
+      .lessons-header h1 {
+        font-size:2.6vh;
+      }
+
+      .lessons-subheading {
+        font-size:2.6vh;
+      }
+
+      .contact-text {
+        font-size:2vh;
+        padding-top:2.5rem;
+      }
+
+      .contact-email-address h5 {
+        font-size:16px;
+      }
+
+      .contact-row {
+        flex-direction: column; /* Stack columns on smaller screens */
+        align-items: center; /* Center the columns */
+      }
+    
+      .contact-col {
+        width: 70%; /* Adjust width as needed */
+        flex-basis: unset; /* Remove flex-basis */
+        margin: 10px;
+        padding: 20px;
+        font-size: 16px; /* Adjust font size */
+        text-align: center; /* Center text */
+      }
+    
+      .contact-col input,
+      .contact-col textarea {
+        width: 100%;
+        font-size: 16px;
+      }
+
+      .hero-btn.red-btn {
+        z-index:1;
+      }
+    }
