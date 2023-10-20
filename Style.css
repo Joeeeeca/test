@@ -5,14 +5,7 @@
 }
 
 
-#size {
-  position:fixed;
-  top:60%;
-  left:50%;
-  transform: translateX(-50%);
-  font-size:35px;
-  color:Red;
-  }
+
 
 .header {
   background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.7)), url('images/Home_scroll_picture.jpg');
