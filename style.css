@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing:border-box;
+}
+
+/*Introduction section*/
+
+.container {
+  margin: 50px auto;
+  width: 80%;
+  height: 600px;
+}
+
+.content-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  height: 550px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.text-column {
+  margin: 20px auto;
+  font-size: 18px;
+  text-align: center;
+  width: 50%;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.slogan h1 {
+  width: 100%;
+}
+
+.slogan p {
+  font-size: 24px;
+  padding: 0 30px;
+}
+
+.image-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage_image1 {
+  width: 80%;
+  padding-top: 130px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .content-row {
+      column-gap: 30px;
+  }
+
+  .slogan p {
+      font-size: 22px;
+      padding: 0 10px;
+  }
+
+  .homepage_image1 {
+      width: 90%;
+  }
+
+  h1 {
+      font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+      width: 100%;
+  }
+
+  .content-row {
+      column-gap: 10px;
+      width: 95%;
+  }
+
+  .slogan p {
+      font-size: 22px;
+      padding: 0;
+  }
+
+  .text-column {
+      width: 50%;
+  }
+
+  h1 {
+      font-size: 34px;
+  }
+
+  .image-column {
+      width: 50%;
+  }
+
+  .homepage_image1 {
+      width: 100%;
+      padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content-row {
+      height: 100%;
+  }
+
+  .image-column {
+      width: 45%;
+  }
+
+  .homepage_image1 {
+      width: 350px;
+      height: auto;
+      max-width: 500px;
+      display: block;
+      margin: 0 auto;
+      padding-top: 60px;
+  }
+
+  .container {
+      margin: 50px auto;
+      height: 400px;
+      width: 95%;
+  }
+
+  .row {
+      column-gap: 40px;
+      width: 100%;
+      height: 400px;
+  }
+
+  .text-column {
+      font-size: 16px;
+      width: 55%;
+  }
+
+  h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+  }
+
+  .slogan p {
+      font-size: 20px;
+      padding: 0;
+      margin-bottom: 10px;
+      text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 425px) {
+.content-row {
+  flex-direction: column-reverse;
+  height: 600px;
+  position:relative;
+}
+
+.text-column {
+  width:100%;
+}
+
+.image-column {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width:100%;
+  height:250px;
+}
+
+.homepage_image1 {
+  padding-top:50px;
+  padding-right:30px;
+  margin:0;
+  height:300px;
+}
+
+.slogan p {
+  height:auto;
+}
+}
+
+@media only screen and (max-width: 375px) {
+
+  .container {
+    width:100%;
+  }
+
+  .image-column {
+    height:200px;
+    margin-top:-80px;
+  }
+
+  .text-column {
+    margin-top:-20px;
+  }
+  .homepage_image1 {
+    padding-top:0px;
+    height:auto;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .slogan p {
+    font-size:18px;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .homepage_image1 {
+    width:100%;
+  }
+
+  .image-column {
+    margin-top:-140px;
+  }
+
+  .text-column {
+    margin-top :-30px;
+  }
+  h1 {
+    font-size:21px;
+  }
+
+  .slogan p {
+    font-size:16px;
+  }
+}
+
+.email-subscription-section {
+  background-color: #383938;
+  padding: 40px; /* Add padding for spacing */
+  height: 100%;
+  position: relative; /* Set position to relative */
+}
+
+.form-container {
+  margin:0 auto;
+  text-align: center;
+}
+
+.form-heading {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color:#fff;
+}  
+
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group input {
+    width: 20%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .form-subtext {
+    color:#fff;
+    margin-bottom:20px;
+    font-size:17px;
+  }
+  
+  input[type="submit"] {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 19px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+ input::placeholder {
+    font-size:18px;
+  }
+
+   /* Add this media query for smaller screens */
+@media only screen and (max-width: 768px) {
+
+  .email-subscription-section {
+    height:345px;
+  }
+  
+    .form-group input {
+      width: 40%; /* Make input fields full width */
+    }
+  
+    .form-logo img {
+      width: 200px; /* Adjust form logo size */
+    }
+  
+    input[type="submit"] {
+      padding: 15px 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .email-subscription-section {
+      position:absolute;
+      top: 80%; /* Position the subscription section below the text column */
+      left: 0; /* Align to the left */
+      width: 100%; /* Ensure full width */
+      z-index: 1; /* Set z-index to appear above text column */
+    }
+    .form-group input {
+      width: 70%; /* Make input fields full width */
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    input[type="submit"] {
+      padding:15px;
+      font-size:16px;
+    }
+  
+    .email-subscription-section {
+      top:67%;
+      height:285px;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .email-subscription-section {
+      top:65%;
+      height:305px;
+    }
+  
+    .form-group input {
+      width:70%;
+      padding:10px 15px;
+    }
+  
+  
+   .form-group #email::placeholder,
+   .form-group #name::placeholder {
+  font-size:15px;
+  width:100%;
+    }
+    
+    input[type="submit"] {
+      padding:14px 5px;
+      font-size:14px;
+    }
+  }
+  
+/* Popup Overlay */
+#popup-overlay {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#popup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#popup-form h2 {
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+}
+
+.pop-up-form-container {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 90%;
+    padding:0;
+}
+
+.form-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100%;
+    padding-left:20px;
+}
+
+.form-right {
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-logo img {
+    width:400px;
+    height:auto;
+    margin-top:75px;
+}
+
+#popup-form input[type="email"],
+#popup-form input[type="text"],
+#popup-form input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin:10px auto;
+}
+
+#popup-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#popup-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#close-popup {
+    position: absolute;
+    top: 12px; /* Adjust top position */
+    right: 10px; /* Align to the right */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size:16px;
+    transition: ease-in-out 0.1s;
+}
+
+#close-popup:hover {
+    background-color: #999;
+}
+
+
+  
+  .email-subscription-section {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .form-logo img {
+      width: 350px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+    #popup-form h2 {
+      font-size:22px;
+    }
+
+
+    #close-popup {
+      padding:0px;
+      top:10px;
+      font-size:14px;
+    }
+
+    .form-logo img {
+      width:260px;
+      margin-top:55px;
+    }
+
+    #popup-form input[type="email"],
+    #popup-form input[type="text"] {
+      padding:7px 10px;
+    }
+
+    #popup-form input[type="email"]::placeholder,
+    #popup-form input[type="text"]::placeholder {
+      font-size:15px;
+    }
+    #popup-form input[type="submit"] {
+      font-size:18px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #popup-form h2 {
+      font-size:16px;
+    }
+    #close-popup {
+      font-size:12px;
+      top:9px;
+    }
+
+    .form-logo img  {
+      width:200px;
+      margin-top:45px;
+    }
+
+    #popup-form input[type="email"],
+    #popup-form input[type="text"] {
+      padding:5px 8px;
+    }
+    #popup-form input[type="email"]::placeholder,
+    #popup-form input[type="text"]::placeholder {
+      font-size:13px;
+    }
+    #popup-form input[type="submit"] {
+      font-size:16px;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    #popup-form {
+      padding:5px 30px;
+    }
+
+    .pop-up-form-container {
+      width:100%;
+    }
+
+    #popup-form h2 {
+      font-size:14px;
+    }
+
+    #close-popup {
+      font-size:10px;
+      top:8px;
+    }
+
+    .form-logo img {
+      width:160px;
+      margin-top:30px;
+    }
+    #popup-form input[type="email"],
+    #popup-form input[type="text"],
+    #popup-form input[type="submit"] {
+      padding:5px 12px;
+      font-size:12px;
+      margin:5px auto;
+    }
+    #popup-form input[type="email"]::placeholder,
+    #popup-form input[type="text"]::placeholder {
+      font-size:10px;
+    }
+    #popup-form input[type="submit"] {
+      font-size:10px;
+      padding:7px 10px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+
+    #popup-form h2 {
+      font-size:13px;
+    }
+
+    
+    #close-popup {
+      font-size:9px;
+      top:8px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .form-logo img {
+      width:130px;
+      margin-top:30px;
+    }
+    #popup-form h2 {
+      font-size:12px;
+    }
+
+    #close-popup {
+      font-size:8px;
+      top:8px;
+    }
+
+  }
