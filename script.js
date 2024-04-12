@@ -54,9 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     // Subscribe button click event listener
-    document.getElementById("mc-embedded-subscribe-form").addEventListener("submit", function (event) {
+    document.getElementById("subscribe-form").addEventListener("submit", function (event) {
       // Prevent default form submission behavior
-      event.preventDefault();
   
       // Hide the signup form
       var signupForm = document.querySelector(".signup-form");
@@ -77,9 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     // Add event listener to the popup subscription form
-    document.getElementById("popup-form").addEventListener("submit", function (event) {
+    document.getElementById("subscribe-form1").addEventListener("submit", function (event) {
       // Prevent the default form submission
-      event.preventDefault();
   
       // Set a cookie when the user submits the popup subscription form
       setCookie("subscribed", "true", 365); // Set the cookie to remember that the user has subscribed for 365 days
